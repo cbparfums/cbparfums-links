@@ -91,11 +91,17 @@ dd { margin: 0; }
 .selo { font-size: 10px; font-weight: 600; letter-spacing: .04em; padding: 2px 8px; border-radius: 999px; }
 .s-oficial { background: var(--ink); color: var(--card); }
 .s-lider { box-shadow: inset 0 0 0 1px var(--gold); color: var(--gold); }
+.trust { list-style: none; margin: 0 0 6px; padding: 0; display: flex; flex-wrap: wrap; gap: 4px; }
+.trust li { font-size: 10.5px; padding: 2px 8px; border-radius: 999px; background: var(--bg); color: var(--ink); }
+.trust li::before { content: "✓ "; color: var(--gold); font-weight: 700; }
+.garantia { background: var(--card); border-radius: 18px; padding: 16px 18px; display: grid; gap: 6px; }
+.garantia h3 { margin: 0; font-family: var(--serif); font-weight: 500; font-size: 19px; }
+.garantia ul { margin: 0; padding-left: 18px; display: grid; gap: 4px; font-size: 13px; color: var(--ink); line-height: 1.45; }
 .aviso { margin: 0; text-align: center; font-size: 12px; color: var(--sub); line-height: 1.5; }
 @media (max-width: 380px) {
   .card { grid-template-columns: 1fr; justify-items: center; text-align: center; }
   .btn, .genero { justify-self: center; }
-  dl div, .vend { justify-content: center; }
+  dl div, .vend, .trust { justify-content: center; }
 }
 @media (prefers-reduced-motion: reduce) { .btn { transition: none; } }
 </style>
@@ -144,7 +150,7 @@ dd { margin: 0; }
           <div><dt>Notas</dt><dd>Canela, baunilha bourbon, praliné</dd></div>
           <div><dt>Ideal para</dt><dd>Noite e dias frios</dd></div>
         </dl>
-        <p class="vend">Vendido por <b>amaviecosmeticos</b> <span class="selo s-lider">MercadoLíder</span></p>
+        <p class="vend">Vendido por <b>amaviecosmeticos</b> <span class="selo s-lider">MercadoLíder</span></p><ul class="trust"><li>+1.000 vendas</li><li>NF-e verificada</li><li>Envio Full</li></ul>
         <a class="btn" href="https://meli.la/1mc9RNn" target="_blank" rel="noopener sponsored">Ver no Mercado Livre</a>
       </div>
     </li>
@@ -174,7 +180,7 @@ dd { margin: 0; }
           <div><dt>Notas</dt><dd>Toranja, gengibre, almíscar</dd></div>
           <div><dt>Ideal para</dt><dd>Dia a dia, trabalho e verão</dd></div>
         </dl>
-        <p class="vend">Vendido por <b>CANAL5MULTIMARCAS</b> <span class="selo s-lider">MercadoLíder</span></p>
+        <p class="vend">Vendido por <b>CANAL5MULTIMARCAS</b> <span class="selo s-lider">MercadoLíder</span></p><ul class="trust"><li>+10 mil vendas</li><li>Nota 4,7</li><li>Envio Full</li></ul>
         <a class="btn" href="https://meli.la/2nbgCDy" target="_blank" rel="noopener sponsored">Ver no Mercado Livre</a>
       </div>
     </li>
@@ -189,7 +195,7 @@ dd { margin: 0; }
           <div><dt>Notas</dt><dd>Abacaxi, bétula, musgo de carvalho</dd></div>
           <div><dt>Ideal para</dt><dd>Dia a dia, trabalho e encontros</dd></div>
         </dl>
-        <p class="vend">Vendido por <b>leimportados2026</b> <span class="selo s-lider">MercadoLíder</span></p>
+        <p class="vend">Vendido por <b>leimportados2026</b> <span class="selo s-lider">MercadoLíder</span></p><ul class="trust"><li>Nota 4,9 · +10 mil vendidos</li><li>NF-e verificada</li><li>Envio Full</li></ul>
         <a class="btn" href="https://meli.la/1G8UqoR" target="_blank" rel="noopener sponsored">Ver no Mercado Livre</a>
       </div>
     </li>
@@ -204,7 +210,7 @@ dd { margin: 0; }
           <div><dt>Notas</dt><dd>Groselha preta, damasco, figo</dd></div>
           <div><dt>Ideal para</dt><dd>Dia a dia, trabalho e calor</dd></div>
         </dl>
-        <p class="vend">Vendido por <b>CALOOSTORE</b></p>
+        <p class="vend">Vendido por <b>CALOOSTORE</b></p><ul class="trust"><li>Nota 4,8 · +5 mil vendidos</li><li>NF-e verificada</li></ul>
         <a class="btn" href="https://meli.la/1JWV2bs" target="_blank" rel="noopener sponsored">Ver no Mercado Livre</a>
       </div>
     </li>
@@ -234,7 +240,7 @@ dd { margin: 0; }
           <div><dt>Notas</dt><dd>Toranja, cardamomo, tabaco, âmbar</dd></div>
           <div><dt>Ideal para</dt><dd>Noite, encontros e eventos</dd></div>
         </dl>
-        <p class="vend">Vendido por <b>Belmont USA</b> <span class="selo s-lider">MercadoLíder</span></p>
+        <p class="vend">Vendido por <b>Belmont USA</b> <span class="selo s-lider">MercadoLíder</span></p><ul class="trust"><li>+1.000 vendas</li><li>Envio internacional (EUA)</li></ul>
         <a class="btn" href="https://meli.la/2duqxAZ" target="_blank" rel="noopener sponsored">Ver no Mercado Livre</a>
       </div>
     </li>
@@ -249,7 +255,7 @@ dd { margin: 0; }
           <div><dt>Notas</dt><dd>Lavanda, flor de laranjeira, baunilha</dd></div>
           <div><dt>Ideal para</dt><dd>Dia e noite, encontros e eventos</dd></div>
         </dl>
-        <p class="vend">Vendido por <b>Sieno</b> <span class="selo s-lider">MercadoLíder</span></p>
+        <p class="vend">Vendido por <b>Sieno</b> <span class="selo s-lider">MercadoLíder</span></p><ul class="trust"><li>+500 mil vendas</li><li>NF-e verificada</li><li>Envio Full</li></ul>
         <a class="btn" href="https://meli.la/2RLHREs" target="_blank" rel="noopener sponsored">Ver no Mercado Livre</a>
       </div>
     </li>
@@ -264,7 +270,7 @@ dd { margin: 0; }
           <div><dt>Notas</dt><dd>Bergamota, flor de laranjeira, patchouli</dd></div>
           <div><dt>Ideal para</dt><dd>Dia a dia, trabalho e encontros</dd></div>
         </dl>
-        <p class="vend">Vendido por <b>Sieno</b> <span class="selo s-lider">MercadoLíder</span></p>
+        <p class="vend">Vendido por <b>Sieno</b> <span class="selo s-lider">MercadoLíder</span></p><ul class="trust"><li>+500 mil vendas</li><li>NF-e verificada</li><li>Envio Full</li></ul>
         <a class="btn" href="https://meli.la/2LZz6xs" target="_blank" rel="noopener sponsored">Ver no Mercado Livre</a>
       </div>
     </li>
@@ -294,7 +300,7 @@ dd { margin: 0; }
           <div><dt>Notas</dt><dd>Manga, gengibre, âmbar</dd></div>
           <div><dt>Ideal para</dt><dd>Dia a dia, verão e passeios</dd></div>
         </dl>
-        <p class="vend">Vendido por <b>SVBPRIME</b> <span class="selo s-lider">MercadoLíder</span></p>
+        <p class="vend">Vendido por <b>SVBPRIME</b> <span class="selo s-lider">MercadoLíder</span></p><ul class="trust"><li>Nota 4,9 · +5 mil vendidos</li><li>NF-e verificada</li><li>Envio Full</li></ul>
         <a class="btn" href="https://meli.la/2WyQxK4" target="_blank" rel="noopener sponsored">Ver no Mercado Livre</a>
       </div>
     </li>
@@ -309,7 +315,7 @@ dd { margin: 0; }
           <div><dt>Notas</dt><dd>Maçã, buquê floral, âmbar</dd></div>
           <div><dt>Ideal para</dt><dd>Noite, encontros e festas</dd></div>
         </dl>
-        <p class="vend">Vendido por <b>Tascila Presentes</b> <span class="selo s-lider">MercadoLíder</span></p>
+        <p class="vend">Vendido por <b>Tascila Presentes</b> <span class="selo s-lider">MercadoLíder</span></p><ul class="trust"><li>Nota 4,9 · +10 mil vendidos</li><li>NF-e verificada</li><li>Envio Full</li></ul>
         <a class="btn" href="https://meli.la/213X2kQ" target="_blank" rel="noopener sponsored">Ver no Mercado Livre</a>
       </div>
     </li>
@@ -414,7 +420,7 @@ dd { margin: 0; }
           <div><dt>Notas</dt><dd>Canela, baunilha bourbon, praliné</dd></div>
           <div><dt>Ideal para</dt><dd>Noite, encontros e dias frios</dd></div>
         </dl>
-        <p class="vend">Vendido por <b>MULTRONIC</b></p>
+        <p class="vend">Vendido por <b>MULTRONIC</b></p><ul class="trust"><li>Nota 4,8 · +1.000 vendidos</li><li>NF-e verificada</li></ul>
         <a class="btn" href="https://meli.la/2F2Qy95" target="_blank" rel="noopener sponsored">Ver no Mercado Livre</a>
       </div>
     </li>
@@ -459,7 +465,7 @@ dd { margin: 0; }
           <div><dt>Notas</dt><dd>Abacaxi, bétula, âmbar-gris</dd></div>
           <div><dt>Ideal para</dt><dd>Dia a dia, trabalho e encontros</dd></div>
         </dl>
-        <p class="vend">Vendido por <b>HIGGORMENEZES</b> <span class="selo s-lider">MercadoLíder</span></p>
+        <p class="vend">Vendido por <b>HIGGORMENEZES</b> <span class="selo s-lider">MercadoLíder</span></p><ul class="trust"><li>Nota 4,8 · +50 mil vendidos</li><li>NF-e verificada</li><li>Envio Full</li></ul>
         <a class="btn" href="https://meli.la/1aru5Yo" target="_blank" rel="noopener sponsored">Ver no Mercado Livre</a>
       </div>
     </li>
@@ -489,7 +495,7 @@ dd { margin: 0; }
           <div><dt>Notas</dt><dd>Tangerina, caramelo, fava tonka</dd></div>
           <div><dt>Ideal para</dt><dd>Dia e noite, encontros e festas</dd></div>
         </dl>
-        <p class="vend">Vendido por <b>CHEIROMARCANTE</b></p>
+        <p class="vend">Vendido por <b>CHEIROMARCANTE</b></p><ul class="trust"><li>NF-e verificada</li><li>3 meses de garantia</li></ul>
         <a class="btn" href="https://meli.la/1j9jiKA" target="_blank" rel="noopener sponsored">Ver no Mercado Livre</a>
       </div>
     </li>
@@ -591,6 +597,16 @@ dd { margin: 0; }
     });
   })();
   </script>
+
+  <section class="garantia">
+    <h3>Compra segura</h3>
+    <ul>
+      <li>Todos os links levam para o <b>Mercado Livre</b>: você paga lá, não aqui.</li>
+      <li>Pela <b>Compra Garantida</b> do Mercado Livre, se o produto não chegar ou vier diferente do anúncio, você pode pedir o dinheiro de volta.</li>
+      <li>Escolhemos lojas oficiais ou vendedores com boa reputação e nota fiscal.</li>
+      <li>Ao receber, confira se o código de lote da caixa é igual ao do frasco.</li>
+    </ul>
+  </section>
 
   <p class="aviso">Links de afiliado: podemos ganhar uma comissão nas compras feitas por eles, sem custo extra para você.</p>
 </main>
