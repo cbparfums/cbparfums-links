@@ -86,11 +86,16 @@ dd { margin: 0; }
 .filtros button[aria-pressed="true"] { background: var(--ink); color: var(--card); box-shadow: none; }
 .filtros button:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
 .vazio { margin: 0; text-align: center; color: var(--sub); font-size: 14px; }
+.vend { margin: 0 0 4px; font-size: 12px; color: var(--sub); display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
+.vend b { color: var(--ink); font-weight: 600; }
+.selo { font-size: 10px; font-weight: 600; letter-spacing: .04em; padding: 2px 8px; border-radius: 999px; }
+.s-oficial { background: var(--ink); color: var(--card); }
+.s-lider { box-shadow: inset 0 0 0 1px var(--gold); color: var(--gold); }
 .aviso { margin: 0; text-align: center; font-size: 12px; color: var(--sub); line-height: 1.5; }
 @media (max-width: 380px) {
   .card { grid-template-columns: 1fr; justify-items: center; text-align: center; }
   .btn, .genero { justify-self: center; }
-  dl div { justify-content: center; }
+  dl div, .vend { justify-content: center; }
 }
 @media (prefers-reduced-motion: reduce) { .btn { transition: none; } }
 </style>
@@ -124,6 +129,7 @@ dd { margin: 0; }
           <div><dt>Notas</dt><dd>Ameixa, cacau, baunilha bourbon</dd></div>
           <div><dt>Ideal para</dt><dd>Festas, noite e dias frios</dd></div>
         </dl>
+        <p class="vend">Vendido por <b>KID'S LIFE</b> <span class="selo s-oficial">Loja oficial ✓</span></p>
         <a class="btn" href="https://meli.la/2BQVCt9" target="_blank" rel="noopener sponsored">Ver no Mercado Livre</a>
       </div>
     </li>
@@ -138,6 +144,7 @@ dd { margin: 0; }
           <div><dt>Notas</dt><dd>Canela, baunilha bourbon, praliné</dd></div>
           <div><dt>Ideal para</dt><dd>Noite e dias frios</dd></div>
         </dl>
+        <p class="vend">Vendido por <b>amaviecosmeticos</b> <span class="selo s-lider">MercadoLíder</span></p>
         <a class="btn" href="https://meli.la/1mc9RNn" target="_blank" rel="noopener sponsored">Ver no Mercado Livre</a>
       </div>
     </li>
@@ -152,6 +159,7 @@ dd { margin: 0; }
           <div><dt>Notas</dt><dd>Castanha glaçada, lavanda, sálvia</dd></div>
           <div><dt>Ideal para</dt><dd>Noite e dias frios</dd></div>
         </dl>
+        <p class="vend">Vendido por <b>Armani Beauty</b> <span class="selo s-oficial">Loja oficial ✓</span></p>
         <a class="btn" href="https://meli.la/24X3nuL" target="_blank" rel="noopener sponsored">Ver no Mercado Livre</a>
       </div>
     </li>
@@ -166,6 +174,7 @@ dd { margin: 0; }
           <div><dt>Notas</dt><dd>Toranja, gengibre, almíscar</dd></div>
           <div><dt>Ideal para</dt><dd>Dia a dia, trabalho e verão</dd></div>
         </dl>
+        <p class="vend">Vendido por <b>CANAL5MULTIMARCAS</b> <span class="selo s-lider">MercadoLíder</span></p>
         <a class="btn" href="https://meli.la/2nbgCDy" target="_blank" rel="noopener sponsored">Ver no Mercado Livre</a>
       </div>
     </li>
@@ -180,6 +189,7 @@ dd { margin: 0; }
           <div><dt>Notas</dt><dd>Abacaxi, bétula, musgo de carvalho</dd></div>
           <div><dt>Ideal para</dt><dd>Dia a dia, trabalho e encontros</dd></div>
         </dl>
+        <p class="vend">Vendido por <b>leimportados2026</b> <span class="selo s-lider">MercadoLíder</span></p>
         <a class="btn" href="https://meli.la/1G8UqoR" target="_blank" rel="noopener sponsored">Ver no Mercado Livre</a>
       </div>
     </li>
@@ -194,6 +204,7 @@ dd { margin: 0; }
           <div><dt>Notas</dt><dd>Groselha preta, damasco, figo</dd></div>
           <div><dt>Ideal para</dt><dd>Dia a dia, trabalho e calor</dd></div>
         </dl>
+        <p class="vend">Vendido por <b>CALOOSTORE</b></p>
         <a class="btn" href="https://meli.la/1JWV2bs" target="_blank" rel="noopener sponsored">Ver no Mercado Livre</a>
       </div>
     </li>
@@ -208,6 +219,7 @@ dd { margin: 0; }
           <div><dt>Notas</dt><dd>Cardamomo, lavanda, íris, baunilha</dd></div>
           <div><dt>Ideal para</dt><dd>Noite, encontros e dias frios</dd></div>
         </dl>
+        <p class="vend">Vendido por <b>Jean Paul Gaultier</b> <span class="selo s-oficial">Loja oficial ✓</span></p>
         <a class="btn" href="https://meli.la/1FZYGXk" target="_blank" rel="noopener sponsored">Ver no Mercado Livre</a>
       </div>
     </li>
@@ -222,6 +234,7 @@ dd { margin: 0; }
           <div><dt>Notas</dt><dd>Toranja, cardamomo, tabaco, âmbar</dd></div>
           <div><dt>Ideal para</dt><dd>Noite, encontros e eventos</dd></div>
         </dl>
+        <p class="vend">Vendido por <b>Belmont USA</b> <span class="selo s-lider">MercadoLíder</span></p>
         <a class="btn" href="https://meli.la/2duqxAZ" target="_blank" rel="noopener sponsored">Ver no Mercado Livre</a>
       </div>
     </li>
@@ -236,6 +249,7 @@ dd { margin: 0; }
           <div><dt>Notas</dt><dd>Lavanda, flor de laranjeira, baunilha</dd></div>
           <div><dt>Ideal para</dt><dd>Dia e noite, encontros e eventos</dd></div>
         </dl>
+        <p class="vend">Vendido por <b>Sieno</b> <span class="selo s-lider">MercadoLíder</span></p>
         <a class="btn" href="https://meli.la/2RLHREs" target="_blank" rel="noopener sponsored">Ver no Mercado Livre</a>
       </div>
     </li>
@@ -250,6 +264,7 @@ dd { margin: 0; }
           <div><dt>Notas</dt><dd>Bergamota, flor de laranjeira, patchouli</dd></div>
           <div><dt>Ideal para</dt><dd>Dia a dia, trabalho e encontros</dd></div>
         </dl>
+        <p class="vend">Vendido por <b>Sieno</b> <span class="selo s-lider">MercadoLíder</span></p>
         <a class="btn" href="https://meli.la/2LZz6xs" target="_blank" rel="noopener sponsored">Ver no Mercado Livre</a>
       </div>
     </li>
@@ -264,6 +279,7 @@ dd { margin: 0; }
           <div><dt>Notas</dt><dd>Limão, leite de coco, almíscar</dd></div>
           <div><dt>Ideal para</dt><dd>Dia a dia, praia e verão</dd></div>
         </dl>
+        <p class="vend">Vendido por <b>Granado</b> <span class="selo s-oficial">Loja oficial ✓</span></p>
         <a class="btn" href="https://meli.la/25BmxWL" target="_blank" rel="noopener sponsored">Ver no Mercado Livre</a>
       </div>
     </li>
@@ -278,6 +294,7 @@ dd { margin: 0; }
           <div><dt>Notas</dt><dd>Manga, gengibre, âmbar</dd></div>
           <div><dt>Ideal para</dt><dd>Dia a dia, verão e passeios</dd></div>
         </dl>
+        <p class="vend">Vendido por <b>SVBPRIME</b> <span class="selo s-lider">MercadoLíder</span></p>
         <a class="btn" href="https://meli.la/2WyQxK4" target="_blank" rel="noopener sponsored">Ver no Mercado Livre</a>
       </div>
     </li>
@@ -292,6 +309,7 @@ dd { margin: 0; }
           <div><dt>Notas</dt><dd>Maçã, buquê floral, âmbar</dd></div>
           <div><dt>Ideal para</dt><dd>Noite, encontros e festas</dd></div>
         </dl>
+        <p class="vend">Vendido por <b>Tascila Presentes</b> <span class="selo s-lider">MercadoLíder</span></p>
         <a class="btn" href="https://meli.la/213X2kQ" target="_blank" rel="noopener sponsored">Ver no Mercado Livre</a>
       </div>
     </li>
@@ -306,6 +324,7 @@ dd { margin: 0; }
           <div><dt>Notas</dt><dd>Orquídea, frutas tropicais, baunilha</dd></div>
           <div><dt>Ideal para</dt><dd>Dia a dia, primavera e verão</dd></div>
         </dl>
+        <p class="vend">Vendido por <b>SEMIKE</b> <span class="selo s-oficial">Loja oficial ✓</span></p>
         <a class="btn" href="https://meli.la/2MJhphM" target="_blank" rel="noopener sponsored">Ver no Mercado Livre</a>
       </div>
     </li>
@@ -320,6 +339,7 @@ dd { margin: 0; }
           <div><dt>Notas</dt><dd>Pera, ube, matchá, baunilha</dd></div>
           <div><dt>Ideal para</dt><dd>Dia a dia, passeios e baladas</dd></div>
         </dl>
+        <p class="vend">Vendido por <b>O Boticário</b> <span class="selo s-oficial">Loja oficial ✓</span></p>
         <a class="btn" href="https://meli.la/25B3Vm3" target="_blank" rel="noopener sponsored">Ver no Mercado Livre</a>
       </div>
     </li>
@@ -334,6 +354,7 @@ dd { margin: 0; }
           <div><dt>Notas</dt><dd>Bergamota, madeira de coco, fava tonka</dd></div>
           <div><dt>Ideal para</dt><dd>Dia a dia, verão e encontros</dd></div>
         </dl>
+        <p class="vend">Vendido por <b>GRIFES &amp; ESTILO</b> <span class="selo s-oficial">Loja oficial ✓</span></p>
         <a class="btn" href="https://meli.la/2UNDQRi" target="_blank" rel="noopener sponsored">Ver no Mercado Livre</a>
       </div>
     </li>
@@ -348,6 +369,7 @@ dd { margin: 0; }
           <div><dt>Notas</dt><dd>Absinto, lavanda, couro, baunilha</dd></div>
           <div><dt>Ideal para</dt><dd>Noite, baladas e festas</dd></div>
         </dl>
+        <p class="vend">Vendido por <b>Carolina Herrera</b> <span class="selo s-oficial">Loja oficial ✓</span></p>
         <a class="btn" href="https://meli.la/1J4Q9zE" target="_blank" rel="noopener sponsored">Ver no Mercado Livre</a>
       </div>
     </li>
@@ -362,6 +384,7 @@ dd { margin: 0; }
           <div><dt>Notas</dt><dd>Limão, lavanda, baunilha</dd></div>
           <div><dt>Ideal para</dt><dd>Dia a dia, trabalho e encontros</dd></div>
         </dl>
+        <p class="vend">Vendido por <b>Rabanne</b> <span class="selo s-oficial">Loja oficial ✓</span></p>
         <a class="btn" href="https://meli.la/24Gyvsa" target="_blank" rel="noopener sponsored">Ver no Mercado Livre</a>
       </div>
     </li>
@@ -376,6 +399,7 @@ dd { margin: 0; }
           <div><dt>Notas</dt><dd>Canela, cravo, baunilha, sândalo</dd></div>
           <div><dt>Ideal para</dt><dd>Noite, encontros e dias frios</dd></div>
         </dl>
+        <p class="vend">Vendido por <b>O Boticário</b> <span class="selo s-oficial">Loja oficial ✓</span></p>
         <a class="btn" href="https://meli.la/2qTUTto" target="_blank" rel="noopener sponsored">Ver no Mercado Livre</a>
       </div>
     </li>
@@ -390,6 +414,7 @@ dd { margin: 0; }
           <div><dt>Notas</dt><dd>Canela, baunilha bourbon, praliné</dd></div>
           <div><dt>Ideal para</dt><dd>Noite, encontros e dias frios</dd></div>
         </dl>
+        <p class="vend">Vendido por <b>MULTRONIC</b></p>
         <a class="btn" href="https://meli.la/2F2Qy95" target="_blank" rel="noopener sponsored">Ver no Mercado Livre</a>
       </div>
     </li>
@@ -404,6 +429,7 @@ dd { margin: 0; }
           <div><dt>Notas</dt><dd>Amêndoa, tuberosa, jasmim, cacau</dd></div>
           <div><dt>Ideal para</dt><dd>Noite, encontros e festas</dd></div>
         </dl>
+        
         <a class="btn" href="https://meli.la/2jziZSZ" target="_blank" rel="noopener sponsored">Ver no Mercado Livre</a>
       </div>
     </li>
@@ -418,6 +444,7 @@ dd { margin: 0; }
           <div><dt>Notas</dt><dd>Menta, lavanda, benjoim, fava tonka</dd></div>
           <div><dt>Ideal para</dt><dd>Noite, encontros e dias frios</dd></div>
         </dl>
+        
         <a class="btn" href="https://meli.la/1yUctP4" target="_blank" rel="noopener sponsored">Ver no Mercado Livre</a>
       </div>
     </li>
@@ -432,6 +459,7 @@ dd { margin: 0; }
           <div><dt>Notas</dt><dd>Abacaxi, bétula, âmbar-gris</dd></div>
           <div><dt>Ideal para</dt><dd>Dia a dia, trabalho e encontros</dd></div>
         </dl>
+        
         <a class="btn" href="https://meli.la/1aru5Yo" target="_blank" rel="noopener sponsored">Ver no Mercado Livre</a>
       </div>
     </li>
@@ -446,6 +474,7 @@ dd { margin: 0; }
           <div><dt>Notas</dt><dd>Bergamota, íris, almíscar, sândalo</dd></div>
           <div><dt>Ideal para</dt><dd>Dia a dia, trabalho e calor</dd></div>
         </dl>
+        
         <a class="btn" href="https://meli.la/1nd5K15" target="_blank" rel="noopener sponsored">Ver no Mercado Livre</a>
       </div>
     </li>
@@ -460,6 +489,7 @@ dd { margin: 0; }
           <div><dt>Notas</dt><dd>Tangerina, caramelo, fava tonka</dd></div>
           <div><dt>Ideal para</dt><dd>Dia e noite, encontros e festas</dd></div>
         </dl>
+        
         <a class="btn" href="https://meli.la/1j9jiKA" target="_blank" rel="noopener sponsored">Ver no Mercado Livre</a>
       </div>
     </li>
@@ -474,6 +504,7 @@ dd { margin: 0; }
           <div><dt>Notas</dt><dd>Bergamota, lavanda, fava tonka</dd></div>
           <div><dt>Ideal para</dt><dd>Dia a dia, trabalho e encontros</dd></div>
         </dl>
+        
         <a class="btn" href="https://meli.la/1Ydyyqn" target="_blank" rel="noopener sponsored">Ver no Mercado Livre</a>
       </div>
     </li>
@@ -488,6 +519,7 @@ dd { margin: 0; }
           <div><dt>Notas</dt><dd>Notas marinhas, lavanda, patchouli</dd></div>
           <div><dt>Ideal para</dt><dd>Dia a dia, trabalho e calor</dd></div>
         </dl>
+        
         <a class="btn" href="https://meli.la/2burDmk" target="_blank" rel="noopener sponsored">Ver no Mercado Livre</a>
       </div>
     </li>
@@ -502,6 +534,7 @@ dd { margin: 0; }
           <div><dt>Notas</dt><dd>Menta, água de coco, figo, tonka</dd></div>
           <div><dt>Ideal para</dt><dd>Dia a dia, verão e encontros</dd></div>
         </dl>
+        
         <a class="btn" href="https://meli.la/1mXkqhP" target="_blank" rel="noopener sponsored">Ver no Mercado Livre</a>
       </div>
     </li>
@@ -516,6 +549,7 @@ dd { margin: 0; }
           <div><dt>Notas</dt><dd>Abacaxi, coco, fava tonka, sândalo</dd></div>
           <div><dt>Ideal para</dt><dd>Dia e noite, encontros e festas</dd></div>
         </dl>
+        
         <a class="btn" href="https://meli.la/2HZaCGo" target="_blank" rel="noopener sponsored">Ver no Mercado Livre</a>
       </div>
     </li>
@@ -530,6 +564,7 @@ dd { margin: 0; }
           <div><dt>Notas</dt><dd>Castanha, ameixa mirabelle, sândalo</dd></div>
           <div><dt>Ideal para</dt><dd>Noite, encontros e dias frios</dd></div>
         </dl>
+        
         <a class="btn" href="https://meli.la/246mUD1" target="_blank" rel="noopener sponsored">Ver no Mercado Livre</a>
       </div>
     </li>
